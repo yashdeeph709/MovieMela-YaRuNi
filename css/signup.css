@@ -1,9 +1,8 @@
 .signup {
     background: rgba(50, 184, 249, 0.28);
     border-radius: 6px;
-    height: 475px;
     margin: 20px auto 0;
-    width: 298px;
+    width: 600px;
 }
 
 .signup h1 {
@@ -34,6 +33,10 @@ input[type="password"] {
     margin: 31px 0 0 29px;
     padding-left: 37px;
     transition: box-shadow 0.3s;
+}
+
+input {
+    float: left;
     width: 240px;
 }
 
@@ -50,7 +53,6 @@ input[type="password"]:focus {
     margin: 31px 0 0 29px;
     padding-left: 37px;
     transition: box-shadow 0.3s;
-    width: 240px;
 }
 
 input[type="text"],
@@ -67,7 +69,6 @@ input[type="text"],
     margin: 31px 0 0 29px;
     padding-left: 37px;
     transition: box-shadow 0.3s;
-    width: 240px;
 }
 
 input[type="text"][type="email"]:focus {
@@ -83,7 +84,6 @@ input[type="text"][type="email"]:focus {
     margin: 31px 0 0 29px;
     padding-left: 37px;
     transition: box-shadow 0.3s;
-    width: 240px;
 }
 
 input[type="password"]:focus,
@@ -174,7 +174,6 @@ input[type="submit"] {
     height: 12px;
     margin: 30px auto;
     opacity: 0.2;
-    width: 270px;
 }
 
 input[type="submit"]:active {

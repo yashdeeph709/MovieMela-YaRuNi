@@ -2,81 +2,83 @@
 <html lang="en">
 
 <head>
-    <title>One stop shop for movies</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/flip.css" />
-    <link rel="stylesheet" type="text/css" href="css/dock.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallary.css" />
-    <link rel="stylesheet" type="text/css" href="css/layout.css" />
-    <script type="text/javascript" src="js/abc.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+   <title>One stop shop for movies</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/flip.css" />
+   <link rel="stylesheet" type="text/css" href="css/dock.css" />
+   <link rel="stylesheet" type="text/css" href="css/gallary.css" />
+   <link rel="stylesheet" type="text/css" href="css/layout.css" />
+   <script type="text/javascript" src="js/dataloader.js"></script>
+   <script type="text/javascript" src="js/abc.js"></script>
+   <!--     <link href='https://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+ -->
 </head>
 
-<body onload="loadXMLDoc('detail/detail1.html')">
-    <div id="content">
-        <div class="header">
-            <h3 style="float:right;position:relative;"><a onclick="loadXMLDoc('detail/form.html')">SignUp</a></h3>
-            <h5>MovieMela <img src="img\movies.png" height="50" width="50"></h5>
-            <h3>One Stop Shop for Movies</h3>
-        </div>
-        <div id="frame">
-        </div>
-        <div class="dockcontainer">
-            <div class="dock">
-                <ul class="catagories">
-                    <li>
-                        <h4>Action</h4>
-                        <a onclick="loadXMLDoc('detail/Action.html')">
-                            <img src="img\Action-icon.png">
-                    </li>
-                    <li>
-                        <h4>Adventure</h4>
-                        <a onclick="loadXMLDoc('detail/Adventure.html')">
-                            <img src="img\Adventure-icon.png">
-                    </li>
-                    <li>
-                        <h4>Animation</h4>
-                        <a onclick="loadXMLDoc('detail/Animation.html')">
-                            <img src="img\Animation-icon.png">
-                    </li>
-                    <li>
-                        <h4>Thriller</h4>
-                        <a onclick="loadXMLDoc('detail/Thriller.html')">
-                            <img src="img\Thriller-icon.png">
-                    </li>
-                    <li>
-                        <h4>Comedy</h4>
-                        <a onclick="loadXMLDoc('detail/Comedy.html')">
-                            <img src="img\Comedy-icon.png">
-                    </li>
-                </ul>
-                <div class="base"></div>
-            </div>
-        </div>
-    </div>
-    <div id="clouds">
-        <ul id="cloud-group-1">
-            <li class="cloud-1"></li>
-            <li class="cloud-2"></li>
-            <li class="cloud-3"></li>
-        </ul>
-        <ul id="cloud-group-2">
-            <li class="cloud-1"></li>
-            <li class="cloud-2"></li>
-            <li class="cloud-3"></li>
-        </ul>
-    </div>
-    <div id="Elsa">
-        <ul id="Elsa">
-            <li class="Elsa"></li>
-            <li class="anna"></li>
-            <li class="coming"></li>
-        </ul>
-    </div>
-    <ul id="water">
-        <li id="water-back"></li>
-        <li id="water-front"></li>
-    </ul>
+<body onload="loadXMLDoc('detail/form.html')">
+   <div id="content">
+      <div class="header">
+         <h3 style="float:right;position:relative;" id="optional"></h3>
+         <h5>MovieMela <img src="img\movies.png" height="50" width="50"></h5>
+         <h3>One Stop Shop for Movies</h3>
+      </div>
+      <div id="frame">
+      </div>
+      <div class="dockcontainer">
+         <div class="dock">
+            <ul class="catagories">
+               <li>
+                  <h4>Action</h4>
+                  <a onclick="loadXMLDoc('detail/Action.html')">
+                     <img src="img\Action-icon.png">
+               </li>
+               <li>
+                  <h4>Adventure</h4>
+                  <a onclick="loadXMLDoc('detail/Adventure.html')">
+                     <img src="img\Adventure-icon.png">
+               </li>
+               <li>
+                  <h4>Animation</h4>
+                  <a onclick="loadXMLDoc('detail/Animation.html')">
+                     <img src="img\Animation-icon.png">
+               </li>
+               <li>
+                  <h4>Thriller</h4>
+                  <a onclick="loadXMLDoc('detail/Thriller.html')">
+                     <img src="img\Thriller-icon.png">
+               </li>
+               <li>
+                  <h4>Comedy</h4>
+                  <a onclick="loadXMLDoc('detail/Comedy.html')">
+                     <img src="img\Comedy-icon.png">
+               </li>
+            </ul>
+            <div class="base"></div>
+         </div>
+      </div>
+   </div>
+   <div id="clouds">
+      <ul id="cloud-group-1">
+         <li class="cloud-1"></li>
+         <li class="cloud-2"></li>
+         <li class="cloud-3"></li>
+      </ul>
+      <ul id="cloud-group-2">
+         <li class="cloud-1"></li>
+         <li class="cloud-2"></li>
+         <li class="cloud-3"></li>
+      </ul>
+   </div>
+   <div id="Elsa">
+      <ul id="Elsa">
+         <li class="Elsa"></li>
+         <li class="anna"></li>
+         <li class="coming"></li>
+      </ul>
+   </div>
+   <ul id="water">
+      <li id="water-back"></li>
+      <li id="water-front"></li>
+   </ul>
 </body>
 
 </html>

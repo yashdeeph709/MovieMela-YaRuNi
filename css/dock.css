@@ -1,6 +1,7 @@
 /* Mac OS Dock code */
 
-h4 {
+.catagories h4 {
+    text-align: center;
     position: relative;
     top: 10px;
     font-family: sans-serif;
