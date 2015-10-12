@@ -1,0 +1,63 @@
+/* Mac OS Dock code */
+
+h4 {
+    position: relative;
+    top: 10px;
+    font-family: sans-serif;
+    width: 80% font-size: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.3;
+}
+
+.catagories {
+    margin-left: 280px;
+    z-index:
+}
+
+.catagories li {
+    float: left;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 3;
+    position: relative;
+    top: 50px;
+}
+
+.catagories li:hover h4 {
+    display: block;
+}
+
+.catagories li h4 {
+    display: none;
+}
+
+.catagories img {
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+    -o-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+    -moz-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+    box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+    -webkit-transition: all 0.3s;
+    -webkit-transform-origin: 50% 100%;
+}
+
+.catagories li:hover {
+    -webkit-transform: scale(200%);
+    margin: 0 2em;
+    -webkit-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.dock .base {
+    background-color: red;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 100px;
+    left: 250px;
+}

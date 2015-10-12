@@ -1,0 +1,196 @@
+body {
+    background: #baeafb;
+    zoom: 90%;
+    width: 100%;
+    position: relative;
+}
+
+body #content {
+    z-index: 4;
+    width: 86%;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+body #frame {
+    margin-top: 20px;
+    z-index: 4;
+    padding: 30px;
+    height: 350px;
+    border-radius: 15px;
+    position: relative;
+    overflow: visible;
+    background-color: rgba(15, 180, 234, 0.34);
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.header {
+    text-align: center;
+}
+
+#frame::-webkit-scrollbar {
+    width: 1em;
+}
+
+#frame::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+#frame::-webkit-scrollbar-thumb {
+    background-color: rgba(15, 180, 234, 0.34);
+    outline: 1px solid rgba(15, 180, 234, 0.5);
+}
+
+body li#water-back {
+    width: 100%;
+    height: 84px;
+    background-image: url(../img/water-back.png);
+    background-repeat: repeat-x;
+    z-index: 1;
+    position: fixed;
+}
+
+body li#water-front {
+    width: 100%;
+    height: 158px;
+    background-image: url(../img/water-front.png);
+    background-repeat: repeat-x;
+    z-index: 3;
+    position: fixed;
+}
+
+body #clouds {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+body #cloud-group-1 {
+    width: 720px;
+    position: absolute;
+    -webkit-animation: cloud-group-1-animation 30s infinite linear;
+    animation: cloud-group-1-animation 30s infinite linear;
+}
+
+body #cloud-group-2 {
+    width: 720px;
+    position: absolute;
+    -webkit-animation: cloud-group-2-animation 30s infinite linear;
+    animation: cloud-group-2-animation 30s infinite linear;
+}
+
+body .cloud-1 {
+    width: 172px;
+    height: 121px;
+    background-image: url(../img/cloud-1.png);
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+body .cloud-2 {
+    width: 121px;
+    height: 75px;
+    background-image: url(../img/cloud-2.png);
+    position: absolute;
+    top: -25px;
+    left: 300px;
+}
+
+body .cloud-3 {
+    width: 132px;
+    height: 105px;
+    background-image: url(../img/cloud-3.png);
+    position: absolute;
+    top: -5px;
+    left: 530px;
+}
+
+body .Elsa {
+    width: 436px;
+    height: 580px;
+    background-image: url(../img/Elsa.png);
+    position: absolute;
+    top: 175px;
+    left: 1260px;
+}
+
+body .anna {
+    width: 436px;
+    height: 580px;
+    background-image: url(../img/anna.png);
+    position: absolute;
+    top: 175px;
+    right: 1300px;
+}
+
+body .coming {
+    width: 300px;
+    height: 240px;
+    background-image: url(../img/coming.png);
+    position: absolute;
+    top: 510px;
+    left: 1200px;
+    z-index: 10;
+}
+
+@-webkit-keyframes cloud-group-1-animation {
+    0% {
+        left: 0px;
+    }
+    99.9999% {
+        left: -720px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes cloud-group-2-animation {
+    0% {
+        left: 720px;
+    }
+    99.9999% {
+        left: 0px;
+    }
+    100% {
+        left: 720px;
+    }
+}
+
+@keyframes cloud-group-1-animation {
+    0% {
+        left: 0px;
+    }
+    99.9999% {
+        left: -720px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes cloud-group-2-animation {
+    0% {
+        left: 720px;
+    }
+    99.9999% {
+        left: 0px;
+    }
+    100% {
+        left: 720px;
+    }
+}
+
+.header {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    background-color: rgba(15, 180, 234, 0.34);
+    border-radius: 15px;
+}
