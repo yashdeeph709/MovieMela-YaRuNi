@@ -34,15 +34,18 @@
          <form id="form">
             <legend>Comment On this Movie:</legend>
             <table>
-               <tr>
-                  <input class="form-email" type="email" placeholder="Ex:ram@gamil.com" pattern="[^ @]*@[^ @]*" value="">
-               </tr>
-               <tr>
-                  <td><b><textarea rows="1" cols="23" name="comment" placeholder="Enter Your Comment..." form="usrform"></textarea></td></tr><br>
-<tr><td><input class="form-submit-button" type="submit" value="Submit" style="font-family: 'Oswald', sans-serif;" ></td></tr>
+            <tr>
+               <input class="form-email" type="email" placeholder="Ex:ram@gamil.com" pattern="[^ @]*@[^ @]*" id="email">
+            </tr>
+            <tr>
+               <td><b><textarea rows="1" cols="23" name="comment" placeholder="Enter Your Comment..." id="description" form="usrform"></textarea></td></tr><br>
+            <tr><td><input class="form-submit-button" type="submit" value="Submit" onclick="comment()"></td></tr>
  
 </table>
+<input type="hidden" id="movieid">
  </form>
+ <ul id="comments"></ul>
+
  </div>
 
     </div>

@@ -10,6 +10,22 @@ function loadXMLDoc(url) {
    xmlhttp.send(null);
    document.getElementById("frame").innerHTML = xmlhttp.response;
    profile();
+   var movies = JSON.parse(localstorage.getItem('movies'));
+   console.log(movies[0].comments);
+   console.log(movies[1].comments);
+}
+
+function comment() {
+   if (isLogged()) {
+      var id = document.getElementById("movieid").value;
+      var movies = JSON.parse(localstorage.getItem('movies'));
+      var comment = {};
+      comment.email = document.getElementById("email").value;
+      comment.description = document.getElementById("description").value;
+      movies[id].comments.push(comment);
+      console.log(movies[id].comments);
+      localstorage.setItem('movies', movies);
+   }
 }
 
 function movie(id) {
@@ -19,6 +35,14 @@ function movie(id) {
    document.getElementById('producer').innerHTML = movies[id].producer;
    document.getElementById('screenplay').innerHTML = movies[id].screenplay;
    document.getElementById('description').innerHTML = movies[id].description;
+   document.getElementById('movieid').innerHTML = id;
+   var ulcomment = document.getElementById('comment');
+   for (i = 0; i < movies[id].comments.length; i++) {
+      var li = document.createElement("li");
+      li.createTextNode(comments[i]);
+      console.log(comments[i])
+      ulcomment.appendChild(li);
+   }
 }
 
 function logout() {

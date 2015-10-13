@@ -211,6 +211,12 @@ button.submit {
     text-align: center;
     text-shadow: 0 -1px 0 #396715;
 }
+.form-submit-button {
+    font-family: 'Oswald', sans-serif;
+    width: 319px;
+    font-size: 25px;
+    height: 38px;
+}
 button.submit:hover {
     opacity: .85;
     cursor: pointer;
